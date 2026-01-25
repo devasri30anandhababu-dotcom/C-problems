@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+char str[100];
+printf("");
+scanf("%s",str);
+int n;
+printf("");
+scanf("%d",&n);
+printf("%s : %d",str,n);
+ return 0;
+}
