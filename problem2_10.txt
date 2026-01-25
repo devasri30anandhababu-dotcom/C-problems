@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main(){
+ int k;
+ k=60;
+ printf("%d",k);
+ return 0;
+}
