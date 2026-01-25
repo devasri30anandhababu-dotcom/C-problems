@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main(){
+    char let;
+    printf("");
+    scanf("%c",&let);
+    printf("%c",let);
+    return 0;
+}
