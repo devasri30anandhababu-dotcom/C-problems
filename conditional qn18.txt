@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int units;
+    float bill=0;
+    scanf("%d",&units);
+    if(units<=100){
+        bill=units*5.0;
+    }
+    
+    else {
+         bill=(100*5.0)+(units-100)*5.0;
+      
+    }
+       printf("Bill amount = Rs. %.2f\n" ,bill);
+   
+    return 0;
+}
