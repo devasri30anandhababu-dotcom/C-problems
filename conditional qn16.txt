@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int c,d,f;
+    scanf("%d%d%d",&c,&d,&f);
+    if(c==d && d==f){
+        printf("Equilateral triangle");
+    }
+    else if(c==d && c!=f) {
+        printf("Isosceles Triangle");
+    }
+    else{
+        printf("Scalene Triangle");
+    }
+
+    return 0;
+}
