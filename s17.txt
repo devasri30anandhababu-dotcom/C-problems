@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main(){
+    int parking;
+    scanf("%d",&parking);
+    int hours;
+    scanf("%d",&hours);
+    switch(parking){
+        case 1:
+        hours=10*hours;
+        printf("₹%d",hours);
+        break;
+        case 2:
+        hours = 20*hours;
+        printf("₹%d",hours);
+        break;
+        default:
+        hours=20*hours;
+        printf("₹%d",hours);
+        break;
+    }
+    return 0;
+}
