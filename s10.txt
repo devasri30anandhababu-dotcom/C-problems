@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main(){
+    int code;
+    scanf("%d",&code);
+    int expe;
+    scanf("%d",&expe);
+    int salary;
+    int year;
+    switch(code){
+        case 1:
+        if(expe>=3){
+            salary=(expe*5000)+50000;
+            printf("Salary₹ %d ",salary);
+        }
+        else{
+                ("Salary ₹50,000");
+            }
+        break;
+        case 2:
+        if(expe>=3){
+            salary=(expe*5000)+35000;
+            printf("Salary₹ %d ",salary);
+        }
+        else{
+            printf("Salary ₹35,000");
+            }
+            break;
+    }
+    return 0;
+}
