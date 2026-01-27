@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main(){
+    int toll;
+    scanf("%d",&toll);
+    int trip;
+    scanf("%d",&trip);
+    int charge;
+    switch(toll){
+        case 1:
+        if(trip==1){
+            printf("₹100");
+        }else if(trip>=2){
+            printf("₹800");
+        }
+        break;
+        case 2:
+        if(trip>=1){
+            charge=trip*240;
+            printf("₹ %d",charge);
+        }
+        break;
+        
+    }
+
+    return 0;
+}
