@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int amount;
+    scanf("%d",&amount);
+    int speedtype;
+    scanf("%d",&speedtype);
+    int charges;
+    switch(speedtype){
+        case 1:
+        charges=50;
+        printf("Delivery ₹%d",charges);
+        break;
+        case 2:
+        if(amount<1000){
+            printf("Delivery ₹100");
+        }
+        else if(amount>=1000){
+            printf("Free");
+        }
+        break;
+    
+    }
+
+    return 0;
+}
