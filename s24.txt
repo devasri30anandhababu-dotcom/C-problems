@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main(){
+    int call;
+    scanf("%d",&call);
+    int min;
+    scanf("%d",&min);
+    switch(call){
+        case 1:
+        printf("Call Charge ₹%d",min*1);
+        break;
+        case 2:
+        printf("Call Charge ₹%d",min*3);
+        break;
+        case 3:
+        printf("Call Charge ₹%d",min*10);
+        break;
+   
+    }
+    
+    
+    return 0;
+}
