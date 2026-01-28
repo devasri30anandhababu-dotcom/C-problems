@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main(){
+    int type;
+    scanf("%d",&type);
+    int units;
+    scanf("%d",&units);
+    
+    switch(type){
+        case 1:
+        if(units<=30){
+            printf("Bill ₹%d",units*5);
+        }else if(units>30){
+            printf("Bill ₹%d",units*8);
+        }
+        break;
+        case 2:
+        printf("Bill ₹%d",units*10);
+        break;
+    }
+    
+    return 0;
+}
