@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main(){
+    int seat;
+    scanf("%d",&seat);
+    int show;
+    scanf("%d",&show);
+    int  price;
+    switch(seat){
+        case 1:
+        if(show>=18){
+            printf("Ticket Price ₹200");
+        }else{
+            printf("Ticket Price ₹150");
+        }
+        break;
+        case 2:
+        if(show>=18){
+            printf("Ticket Price ₹300");
+        }else{
+            printf("Ticket Price ₹250");
+        }
+        break;
+        
+    }
+    
+    return 0;
+}
