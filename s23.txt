@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(){
+    int cus;
+    scanf("%d",&cus);
+    int bill;
+    scanf("%d",&bill);
+    int a;
+    switch(cus){
+        case 1:
+        a=bill-(bill*0.05);
+        printf("Pay ₹%d",a);
+        break;
+        case 2:
+        a=bill-(bill*0.15);
+        printf("Pay ₹%d",a);
+        break;
+    }
+    
+    
+    return 0;
+}
