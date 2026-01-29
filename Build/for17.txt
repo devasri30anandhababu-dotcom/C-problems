@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main(){
+    int n,num,rem,sum=0,fact=1;
+    scanf("%d",&n);
+    num=n;
+    for(int i=n; i!=0; i=i/10){
+        rem=i%10;
+
+        for(int i=1; i<=rem; i++){
+            fact=fact*i;
+        }
+        sum=sum+fact;
+    }
+    if(sum==num)
+        printf("Yes");
+    else
+        printf("No");
+    return 0;
+}
