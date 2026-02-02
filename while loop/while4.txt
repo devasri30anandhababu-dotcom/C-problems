@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int n,n1,failure=0,lfs=0;
+    scanf("%d",&n);
+    int i=0;
+    while(i<n){
+        scanf("%d",&n1);
+        if(n1==0){
+            failure++;
+            if(failure>lfs){
+                lfs=failure;
+        }
+        }
+        else if(n1==1){
+            failure=0;
+        }
+        i++;
+        
+    }
+    printf("Longest Failure Streak : %d",lfs);
+    
+
+    return 0;
+}
