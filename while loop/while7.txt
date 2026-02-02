@@ -1,0 +1,29 @@
+
+#include <stdio.h>
+
+int main() {
+    int weight;
+#include <stdio.h>
+
+int main() {
+    int cp,n,ch;
+    scanf("%d%d",&cp,&n);
+    int occupied=0;
+    int count=0;
+    int i=0;
+    while(i<n){
+        scanf("%d",&ch);
+        occupied+=ch;
+        if(occupied<0){
+            occupied=0;
+        }
+        if(occupied>=cp){
+            count++;
+        }
+        i++;
+    }
+    printf("Final Occupied Beds : %d",occupied);
+    printf("\nCritical Hours Count : %d",count);
+    
+    return 0;
+}
