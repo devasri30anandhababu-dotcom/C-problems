@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int n,delay;
+    scanf("%d",&n);
+    int i=0;
+    int td=0;
+    int dd=0;
+    while(i<n){
+        scanf("%d",&delay);
+        td+=delay;
+        if(delay>2){
+            dd++;
+        }
+        i++;
+    }
+    printf("Total Delay : %d",td);
+    printf("\nDelayed Days : %d",dd);
+
+    
+    return 0;
+}
