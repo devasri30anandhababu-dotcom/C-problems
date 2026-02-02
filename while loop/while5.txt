@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    
+    int n,n1;
+    scanf("%d",&n);
+    int success=0;
+    int cancel=0;
+    int i=0;
+    while(i<n){
+        scanf("%d",&n1);
+        if(n1==1){
+            success++;
+        }
+        else if(n1==0){
+            cancel++;
+        }
+        i++;
+    }
+    printf("\nSuccessful : %d",success);
+    printf("\nancelled : %d",cancel);
+    if(cancel>success){
+        printf("\nStatus :  Risk");
+    }
+    else{
+        printf("\nStatus : Safe");
+    }
+
+    return 0;
+}
