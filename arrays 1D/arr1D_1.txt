@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main(){
+    int size;
+    scanf("%d",&size);
+    int arr[size];
+    for(int i=0;i<size;i++){
+        scanf("%d",&arr[i]);
+    }
+    int high=arr[0];
+    int secondhigh=-1;
+    for(int j=0;j<size;j++){
+        if(arr[j]>high){
+            secondhigh=high;
+            high=arr[j];
+        }
+        else if(arr[j]>secondhigh && high!=arr[j]){
+            secondhigh=arr[j];
+        }
+       
+    }
+     printf(" Second highest salary %d ",secondhigh);
+    
+    return 0;
+}
