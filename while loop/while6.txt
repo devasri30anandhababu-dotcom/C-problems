@@ -1,0 +1,32 @@
+
+#include <stdio.h>
+
+int main() {
+    int weight;
+     int n,n1;
+    scanf("%d%d",&weight,&n);
+   
+    int i=0;
+    int total=0;
+    int count=0;
+    
+    while(i<n){
+        scanf("%d",&n1);
+        total+=n1;
+        if(total<=weight){
+            count++;
+        }
+        
+        i++;
+        
+    }
+    printf("Passengers Allowed : %d",count);
+    if(total>=weight){
+        printf("\nOverload : Yes");
+    }
+    else if(total<weight){
+        printf("\nOverload : No");
+    }
+
+    return 0;
+}
