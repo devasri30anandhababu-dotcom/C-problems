@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main(){
+    int level;
+    int noise;
+    int violation=0;
+    int svs=0;
+    int lvs=0;
+    scanf("%d",&level);
+    while(level>0){
+        scanf("%d",&noise);
+        if(noise>70){
+            violation++;
+            svs++;
+            if(svs>lvs){
+            lvs=svs;
+        }
+        }
+        else{
+            svs=0;
+        }
+    
+        level--;
+    }
+    printf("Noise Violations : %d",violation);
+    printf("\nLongest Violation Streak :%d ",lvs);
+        
+       
+    
+    return 0;
+}
