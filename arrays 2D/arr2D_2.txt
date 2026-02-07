@@ -1,0 +1,66 @@
+#include<stdio.h>
+int main(){
+    int r,c;
+    scanf("%d%d",&r,&c);
+    int arr[r][c];
+    for(int i=0;i<r;i++){
+        for(int j=0;j<c;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    int val1,val2,max;
+    int positive_max=arr[0][0];
+    int positive_min=arr[0][0];
+    int negative_max=arr[0][0];
+    int negative_min=arr[0][0];
+    
+    for(int i=0;i<r;i++){
+        for(int j=0;j<c;j++){
+            if(arr[i][j]>0){
+                if(arr[i][j]>positive_max){
+                    positive_max=arr[i][j];
+                }
+                if(arr[i][j]<positive_min){
+                    positive_min=arr[i][j];
+                }
+            }
+            else if(arr[i][j]<0){
+                if(arr[i][j]>negative_max){
+                    negative_max=arr[i][j];
+                }
+                if(arr[i][j]<negative_min){
+                    negative_min=arr[i][j];
+                }
+            }
+        }
+    }
+    val1=positive_max*positive_min;
+    val2=negative_max*negative_min;
+    if(val1>val2){
+        max=val1;
+    }
+    else if(val1<val2){
+        max=val2;
+    }
+    printf("%d",max);
+    return 0;
+}
+#include <stdio.h>
+
+int main() {
+    int n,sum=0,rem;
+    scanf("%d",&n);
+    int a=n;
+    for(int i=n;n!=0;n=n/10){
+        rem=n%10;
+        sum=sum+(rem*rem*rem);
+    }
+    
+    if(a==sum){
+        printf("Yes");
+     }
+     else{
+         printf("No");
+     }
+    return 0;
+}
