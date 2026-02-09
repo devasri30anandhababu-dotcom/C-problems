@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int bal,n,n1,a;
+    scanf("%d%d",&bal,&n);
+    int sum=0,count=0;
+    int i=0;
+    while(i<n){
+        scanf("%d",&n1);
+        sum+=n1;
+        if(sum<=bal){
+            count++;
+            a=bal-sum;
+        }
+        
+        i++;
+    }
+    printf("Successful Purchases : %d",count);
+    printf("\nFinal Balance : %d",a);
+
+    return 0;
+}
+
