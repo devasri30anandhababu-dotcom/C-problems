@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int cap,n,n1;
+    scanf("%d%d",&cap,&n);
+    int safe=0,fail=0;
+    int i=0;
+    while(i<n){
+        scanf("%d",&n1);
+        if(n1<=cap){
+            safe++;
+        }else{
+            fail++;
+        }
+        i++;
+    }
+    printf("Safe Hours : %d",safe);
+    printf("\nFailure Count : %d",fail);
+    return 0;
+}
+
