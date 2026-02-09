@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d",&n);
+    int sum=0,count=0,n1;
+    int i=0;
+    while(i<n){
+        scanf("%d",&n1);
+        sum+=n1;
+        if(n1>4){
+        count++;
+    }
+    i++;
+    }
+    printf("Total Overtime Hours:%d ",sum);
+    printf("\nBurnout Days : %d",count);
+    return 0;
+}
+
