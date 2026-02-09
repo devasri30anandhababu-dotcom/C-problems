@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int weight,n,n1;
+    scanf("%d%d",&weight,&n);
+    int sum=0,count=0;
+    int i=0;
+    while(i<n){
+        scanf("%d",&n1);
+        sum+=n1;
+        if(sum<=weight){
+            count++;
+        }
+        i++;
+    }
+    printf("People Entered : %d",count);
+    if(sum>weight){
+        printf("Overload Status : Yes");
+    }
+    else if(sum<=weight){
+        printf("\nOverload Status : No");
+    }
+    
+    
+    
+
+    return 0;
+}
+
