@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int atm,n,amount;
+    scanf("%d%d",&atm,&n);
+    int sum=0,count=0,n1;
+    int i=0;
+    while(i<n){
+        scanf("%d",&amount);
+        sum+=amount;
+        if(sum<=atm){
+            count++;
+            n1=atm-sum;
+        }
+        i++;
+    }
+    printf("Successful Withdrawals :%d ",count);
+    printf("\nRemaining Cash : %d",n1);
+    return 0;
+}
+
