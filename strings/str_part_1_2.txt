@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    char str[20];
+    fgets(str,sizeof(str),stdin);
+    int Uppercase=0;
+    for(int i=0;str[i]!='\0';i++){
+        if(str[i]=='\n'){
+            continue;
+        }
+        if(str[i]>='A' && str[i]<='Z'){
+            Uppercase=1;
+        }
+    }
+        if(Uppercase==1){
+            printf("Valid");
+        }
+        else if(Uppercase==0){
+            printf("Invalid");
+        }
+    
+
+    return 0;
+}
