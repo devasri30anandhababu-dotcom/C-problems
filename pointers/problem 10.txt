@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main(){
+    char str[200];
+    fgets(str,sizeof(str),stdin);
+    char *p=str;
+    int space=0,count=1;
+    for(int i=0;*(p+i)!='\0';i++){
+        if(*(p+i)==' '){
+            space++;
+            count++;
+        }
+        
+    }
+    printf("%d",count);
+    return 0;
+}
