@@ -1,0 +1,27 @@
+#include<stdio.h>
+int search(int arr[],int size,int element){
+    int *p=arr;
+    int index=-1;
+    for(int j=0;j<size;j++){
+        if(*(p+j)==element){
+            index=j+1;
+        }
+}
+return index;
+}
+
+int main(){
+    int size;
+    scanf("%d",&size);
+    int arr[size];
+    for(int i= 0;i<size;i++){
+        scanf("%d",&arr[i]);
+    }
+    int target;
+    scanf("%d",&target);
+    int find=search(arr,size,target);
+    printf("%d",find);
+    
+    return 0;
+}
+
