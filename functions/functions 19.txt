@@ -1,0 +1,16 @@
+#include<stdio.h>
+void find(int n, int p, int res){
+    res=1;
+    for(int i=1;i<=p;i++){
+        res=res*n;
+    }
+    printf("%d",res);
+}
+
+int main(){
+    int n,p,res;
+    scanf("%d%d",&n,&p);
+    find(n,p,res);
+
+    return 0;
+}
