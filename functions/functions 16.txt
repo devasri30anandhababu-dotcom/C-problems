@@ -1,0 +1,23 @@
+#include<stdio.h>
+void find(int a, int b, int c, int n){
+    a=0,b=1;
+    if(n==1){
+    printf("%d",a);
+    }
+    if(n>1){
+    printf("%d %d ",a,b); 
+    for(int i=0;i<n-2;i++){
+        c=a+b;
+        printf("%d ",c);
+        a=b;
+        b=c;
+    }
+}
+}
+
+int main(){
+    int a,b,c,n;
+    scanf("%d",&n);
+    find(a,b,c,n);
+    return 0;
+}
