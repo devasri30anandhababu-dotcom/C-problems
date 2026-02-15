@@ -1,0 +1,24 @@
+#include<stdio.h>
+void find(int n,int num){
+    int sum=0;
+    int rem;
+    num=n;
+    for(int i=n;n!=0;n=n/10){
+        rem=n%10;
+        sum=sum+(rem*rem*rem);
+    }
+    if(num==sum){
+        printf("Armstrong");
+    }
+    else{
+        printf("Not Armstrong");
+    }
+}
+
+
+int main(){
+    int n,num;
+    scanf("%d",&n);
+    find(n,num);
+    return 0;
+}
